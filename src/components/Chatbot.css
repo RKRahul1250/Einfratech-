@@ -340,6 +340,22 @@
   object-fit: contain;
 }
 
+.chat-bot-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2000;
+  /* ... rest of the toggle button styles ... */
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .chat-bot-toggle {
+    bottom: 5px;
+    right: 5px;
+  }
+}
+
 .question-btn {
   background: #0bbfe8;
   color: white;

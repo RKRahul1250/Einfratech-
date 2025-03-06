@@ -75,6 +75,7 @@ const NavBar = () => {
                   <NavDropdown.Item as={NavLink} to="/publicsector" onClick={() => setShowSidebar(false)}>Public Sector</NavDropdown.Item>
                   <NavDropdown.Item as={NavLink} to="/lifescience" onClick={() => setShowSidebar(false)}>Life Sciences</NavDropdown.Item>
                   <NavDropdown.Item as={NavLink} to="/education" onClick={() => setShowSidebar(false)}>Education</NavDropdown.Item>
+                  <NavDropdown.Item as={NavLink} to="/healthcare" onClick={() => setShowSidebar(false)}>Healthcare</NavDropdown.Item>  
 
                 </NavDropdown>
                 <Nav.Link as={NavLink} to="/customer" onClick={() => setShowSidebar(false)}>Customer</Nav.Link>
@@ -112,6 +113,7 @@ const NavBar = () => {
                 <NavDropdown.Item as={NavLink} to="/publicsector">Public Sector</NavDropdown.Item>
                 <NavDropdown.Item as={NavLink} to="/lifescience">Life Sciences</NavDropdown.Item>
                 <NavDropdown.Item as={NavLink} to="/education">Education</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/healthcare">Healthcare</NavDropdown.Item>
               </NavDropdown>
 
               <Nav.Link as={NavLink} to="/customer">Customer</Nav.Link>

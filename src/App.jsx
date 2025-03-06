@@ -18,6 +18,9 @@ import Shedule from "./pages/Shedule.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
 import Education from "./pages/Education.jsx";
 import Professional from "./pages/Professional.jsx";
+import Healthcare from "./pages/Healthcare.jsx";
+import HealthCare from "./pages/Healthcare.jsx";
+
 
 function App() {
   return (
@@ -51,6 +54,7 @@ function MainLayout() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/education" element={<Education />} />
         <Route path="/professional" element={<Professional />} />
+        <Route path="/healthcare" element={<HealthCare />} />
       </Routes>
       {!hideNavFooter && <Footer />}
       {!hideNavFooter && <Chatbot />}

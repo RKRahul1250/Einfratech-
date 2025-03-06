@@ -180,64 +180,64 @@ const Dashboard = () => {
             </div>
 
             {/* Additional Sections with Light Grey Background */}
-            <div className="container my-5 py-5 bg-white rounded">
-                <div className="row align-items-center mb-4 text-center">
-                    <div className="col-md-6">
-                        <img src="/public/images/c.jpeg" alt="Facilities Maintenance" className="img-fluid rounded shadow" style={{ maxWidth: "55%", height: "auto" }} />
-                    </div>
-                    <div className="col-md-5">
-                        <h2 className="fw-bold text-center pt-3 text-primary" style={{ font: 'times' }}>Comprehensive Facilities Maintenance</h2>
-                        <p className='text-center px-4'>
-                            Ensure the longevity and optimal performance of your assets with our proactive facilities maintenance services.
-                            We utilize advanced Integrated Workplace Management Systems (IWMS) to monitor and manage your facilities efficiently, minimizing downtime and reducing operational costs.
-                            Our team is dedicated to maintaining a safe and productive environment for your organization.
-                        </p>
-                    </div>
-                </div>
+<div className="container my-5 py-5 bg-white rounded">
+    <div className="row align-items-center mb-5">
+        <div className="col-md-6">
+            <img src="/public/images/c.jpeg" alt="Facilities Maintenance" className="img-fluid rounded shadow" style={{ maxWidth: "75%", height: "auto" }} />
+        </div>
+        <div className="col-md-6">
+            <h2 className="fw-bold mb-4 text-primary">Comprehensive Facilities Maintenance</h2>
+            <p className="text-start lead">
+                Ensure the longevity and optimal performance of your assets with our proactive facilities maintenance services.
+                We utilize advanced Integrated Workplace Management Systems (IWMS) to monitor and manage your facilities efficiently, minimizing downtime and reducing operational costs.
+                Our team is dedicated to maintaining a safe and productive environment for your organization.
+            </p>
+        </div>
+    </div>
 
-                <div className="row align-items-center mb-4 text-center">
-                    <div className="col-md-6 order-md-2">
-                        <img src="/public/images/c2.jpeg" alt="Space Planning" className="img-fluid rounded shadow" style={{ maxWidth: "60%", height: "auto" }} />
-                    </div>
-                    <div className="col-md-6 order-md-1 text-center">
-                        <h2 className="fw-bold pt-3 text-primary">Strategic Space Planning and Optimization</h2>
-                        <p className='text-center px-4'>
-                            Maximize your workspace potential with our strategic space planning solutions.
-                            By analyzing your current utilization and future needs, we design layouts that enhance collaboration and efficiency.
-                            Our approach ensures that your real estate investments align with your organizational goals, providing a flexible and adaptive work environment.
-                        </p>
-                    </div>
-                </div>
+    <div className="row align-items-center mb-5">
+        <div className="col-md-6 order-md-2">
+            <img src="/public/images/c2.jpeg" alt="Space Planning" className="img-fluid rounded shadow" style={{ maxWidth: "75%", height: "auto" }} />
+        </div>
+        <div className="col-md-6 order-md-1">
+            <h2 className="fw-bold mb-4 text-primary">Strategic Space Planning and Optimization</h2>
+            <p className="text-start lead">
+                Maximize your workspace potential with our strategic space planning solutions.
+                By analyzing your current utilization and future needs, we design layouts that enhance collaboration and efficiency.
+                Our approach ensures that your real estate investments align with your organizational goals, providing a flexible and adaptive work environment.
+            </p>
+        </div>
+    </div>
 
-                <div className="row align-items-center mb-4 text-center">
-                    <div className="col-md-6">
-                        <img src="/public/images/c3.jpeg" alt="OT Security" className="img-fluid rounded shadow" style={{ maxWidth: "60%", height: "auto" }} />
-                    </div>
-                    <div className="col-md-6">
-                        <h2 className="fw-bold text-primary text-center pt-3">Robust Operational Technology (OT) Security</h2>
-                        <p className='text-center px-4'>
-                            Protect your critical infrastructure with our comprehensive OT security services.
-                            We implement advanced security measures, including next-generation firewalls and real-time monitoring, to safeguard your operational technology assets from cyber threats. 
-                            Our solutions are designed to detect, prevent, and respond to potential vulnerabilities, ensuring the resilience of your industrial control systems.
-                            FORTINET.COM
-                        </p>
-                    </div>
-                </div>
+    <div className="row align-items-center mb-5">
+        <div className="col-md-6">
+            <img src="/public/images/c3.jpeg" alt="OT Security" className="img-fluid rounded shadow" style={{ maxWidth: "75%", height: "auto" }} />
+        </div>
+        <div className="col-md-6">
+            <h2 className="fw-bold mb-4 text-primary">Robust Operational Technology (OT) Security</h2>
+            <p className="text-start lead">
+                Protect your critical infrastructure with our comprehensive OT security services.
+                We implement advanced security measures, including next-generation firewalls and real-time monitoring, to safeguard your operational technology assets from cyber threats. 
+                Our solutions are designed to detect, prevent, and respond to potential vulnerabilities, ensuring the resilience of your industrial control systems.
+            </p>
+        </div>
+    </div>
 
-                <div className="row align-items-center mb-4 text-center">
-                    <div className="col-md-6 order-md-2">
-                        <img src="/public/images/c4.jpeg" alt="Energy Management" className="img-fluid rounded shadow" style={{ maxWidth: "60%", height: "auto" }} />
-                    </div>
-                    <div className="col-md-6 order-md-1">
-                        <h2 className="fw-bold text-primary text-center pt-3">Sustainable Energy Management Solutions</h2>
-                        <p className='text-center px-4'>
-                            Promote environmental responsibility with our sustainable energy management services.
-                            We provide smart energy solutions that reduce consumption and operational costs, integrating eco-friendly practices into your daily operations. 
-                            Our team assists in implementing renewable energy sources and optimizing energy usage, contributing to a greener and more sustainable future.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <div className="row align-items-center mb-5">
+        <div className="col-md-6 order-md-2">
+            <img src="/public/images/c4.jpeg" alt="Energy Management" className="img-fluid rounded shadow" style={{ maxWidth: "75%", height: "auto" }} />
+        </div>
+        <div className="col-md-6 order-md-1">
+            <h2 className="fw-bold mb-4 text-primary">Sustainable Energy Management Solutions</h2>
+            <p className="text-start lead">
+                Promote environmental responsibility with our sustainable energy management services.
+                We provide smart energy solutions that reduce consumption and operational costs, integrating eco-friendly practices into your daily operations. 
+                Our team assists in implementing renewable energy sources and optimizing energy usage, contributing to a greener and more sustainable future.
+            </p>
+        </div>
+    </div>
+</div>
+
         </div>
     );
 };

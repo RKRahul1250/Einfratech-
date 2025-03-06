@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { FaPaperPlane, FaRobot } from 'react-icons/fa';
+import { FaRobot } from 'react-icons/fa';
 import "./Chatbot.css";
 
 const Chatbot = () => {
   const [messages, setMessages] = useState([
     { id: 1, text: "Welcome to Einfratech Systems India! How can I assist you?", sender: "bot" }
   ]);
-  const [input, setInput] = useState("");
   const [showCategories, setShowCategories] = useState(true);
   const [currentCategory, setCurrentCategory] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +13,6 @@ const Chatbot = () => {
   const [isHovering, setIsHovering] = useState(false);
   const [hoverMessage, setHoverMessage] = useState("Hi INFRA here");
   const [isTyping, setIsTyping] = useState(false);
-  
 
   useEffect(() => {
     const messageContainer = document.querySelector('.chatbot-messages');
@@ -92,17 +90,13 @@ const Chatbot = () => {
     }, 500);
   };
 
-  
-
   const handleUserMessage = (text) => {
     if (!text.trim()) return;
     
     const userMessage = { id: messages.length + 1, text, sender: "user" };
     setMessages(prev => [...prev, userMessage]);
-    setInput("");
     setIsTyping(true);
 
-    // Simulate bot typing delay
     setTimeout(() => {
       const botMessage = { 
         id: messages.length + 2, 
@@ -126,8 +120,6 @@ const Chatbot = () => {
 
   return (
     <>
-
-    
       <div 
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
@@ -138,34 +130,54 @@ const Chatbot = () => {
             {hoverMessage}
           </div>
         )}
-        <button 
+                       <button 
           className="chatbot-toggle" 
           onClick={() => {
             setIsOpen(!isOpen);
             setIsHovering(false);
           }}
+          style={{
+            position: '',
+            bottom: '-15px',
+            right: '-15px',
+            border: 'none',
+            borderRadius: '50%',
+            cursor: 'pointer',
+            padding: 0,
+            
+            zIndex: 1000,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            
+          }}
         >
           <img 
             src="/images/1.png" 
             alt="Chat" 
-            style={{ width: '60px', height: '60px' }}
+            style={{ 
+              width: '50px', 
+              height: '50px',
+              
+              
+            }}
           />
         </button>
       </div>
 
       {isOpen && (
-                <div className="chatbot-container">
-                <div className="chatbot-header">
-                  <div style={{ flex: 1 }}></div>
-                  <span style={{ flex: 1, textAlign: 'center' }}>INFRA</span>
-                  <button 
-                    className="close-button"
-                    style={{ flex: 1, justifyContent: 'flex-end' }}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    ✕
-                  </button>
-                </div>
+        <div className="chatbot-container">
+          <div className="chatbot-header">
+            <div style={{ flex: 1 }}></div>
+            <span style={{ flex: 1, textAlign: 'center' }}>INFRA</span>
+            <button 
+              className="close-button"
+              style={{ flex: 1, justifyContent: 'flex-end' }}
+              onClick={() => setIsOpen(false)}
+            >
+              ✕
+            </button>
+          </div>
 
           <div className="chatbot-messages">
             {messages.map((msg) => (
@@ -215,23 +227,6 @@ const Chatbot = () => {
                 ))}
               </>
             )}
-          </div>
-
-          <div className="chatbot-input-container">
-            <input
-              type="text"
-              className="chatbot-input"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyPress={(e) => e.key === 'Enter' && handleUserMessage(input)}
-              placeholder="Type your message..."
-            />
-            <button 
-              className="chatbot-send-btn"
-              onClick={() => handleUserMessage(input)}
-            >
-              <FaPaperPlane />
-            </button>
           </div>
         </div>
       )}

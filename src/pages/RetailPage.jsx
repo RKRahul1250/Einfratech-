@@ -37,67 +37,67 @@ const RetailPage = () => {
         </Container>
       </section>
       
-      {/* Key Features Cards */}
-      <section className="features-section py-5">
-        <Container>
-          <Row className="g-4">
-            <Col md={6}>
-              <Card className="feature-card shadow-lg p-4 border-0">
-                <Card.Body>
-                  <div className="d-flex align-items-center mb-3">
-                    <div className="feature-icon me-3 text-primary animate-icon">
-                      <FaUsers size={28} />
-                    </div>
-                    <h4 className="feature-title m-0 fw-bold">Keep Your Customers Coming Back</h4>
-                  </div>
-                  <p className="text-secondary">A positive customer experience starts with smooth store operations.</p>
-                  <ul className="list-unstyled">
-                    <li className="d-flex align-items-center">
-                      <FaUsers className="me-2 text-primary" />
-                      <span className="text-secondary">Positive interactions & visitor management</span>
-                    </li>
-                    <li className="d-flex align-items-center">
-                      <FaCalendarAlt className="me-2 text-primary" />
-                      <span className="text-secondary">User metrics & space planning</span>
-                    </li>
-                    <li className="d-flex align-items-center">
-                      <FaChartLine className="me-2 text-primary" />
-                      <span className="text-secondary">Capital projects & financial planning</span>
-                    </li>
-                  </ul>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6}>
-              <Card className="feature-card shadow-lg p-4 border-0">
-                <Card.Body>
-                  <div className="d-flex align-items-center mb-3">
-                    <div className="feature-icon me-3 text-success animate-icon">
-                      <FaChartLine size={28} />
-                    </div>
-                    <h4 className="feature-title m-0 fw-bold">Achieve Complete Store Visibility</h4>
-                  </div>
-                  <p className="text-secondary">Gain real-time insights into store operations and financial efficiencies.</p>
-                  <ul className="list-unstyled">
-                    <li className="d-flex align-items-center">
-                      <FaStore className="me-2 text-success" />
-                      <span className="text-secondary">Optimize Store Operations</span>
-                    </li>
-                    <li className="d-flex align-items-center">
-                      <FaToolbox className="me-2 text-success" />
-                      <span className="text-secondary">Break Down Silos</span>
-                    </li>
-                    <li className="d-flex align-items-center">
-                      <FaTruck className="me-2 text-success" />
-                      <span className="text-secondary">Improve Vendor Performance</span>
-                    </li>
-                  </ul>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <section className="features-section">
+  <Container>
+    <Row className="g-4">
+      <Col lg={6} md={12}>
+        <Card className="feature-card">
+          <Card.Body>
+            <div className="d-flex align-items-center mb-4">
+              <div className="feature-icon me-3 text-primary">
+                <FaUsers size={24} />
+              </div>
+              <h4 className="feature-title m-0 fw-bold">Keep Your Customers Coming Back</h4>
+            </div>
+            <p className="text-secondary mb-4">A positive customer experience starts with smooth store operations.</p>
+            <ul className="list-unstyled mb-0">
+              <li className="d-flex align-items-center">
+                <FaUsers className="me-3 text-primary" />
+                <span className="text-secondary">Positive interactions & visitor management</span>
+              </li>
+              <li className="d-flex align-items-center">
+                <FaCalendarAlt className="me-3 text-primary" />
+                <span className="text-secondary">User metrics & space planning</span>
+              </li>
+              <li className="d-flex align-items-center">
+                <FaChartLine className="me-3 text-primary" />
+                <span className="text-secondary">Capital projects & financial planning</span>
+              </li>
+            </ul>
+          </Card.Body>
+        </Card>
+      </Col>
+      
+      <Col lg={6} md={12}>
+        <Card className="feature-card">
+          <Card.Body>
+            <div className="d-flex align-items-center mb-4">
+            <div className="feature-icon me-3 text-success">
+          <FaChartLine size={24} />
+        </div>
+              <h4 className="feature-title m-0 fw-bold">Achieve Store Excellence</h4>
+            </div>
+            <p className="text-secondary mb-4">Optimize operations and drive business growth with data-driven insights.</p>
+            <ul className="list-unstyled mb-0">
+              <li className="d-flex align-items-center">
+                <FaUsers className="me-3 text-primary" />
+                <span className="text-secondary">Real-time store performance monitoring</span>
+              </li>
+              <li className="d-flex align-items-center">
+                <FaCalendarAlt className="me-3 text-primary" />
+                <span className="text-secondary">Streamlined maintenance management</span>
+              </li>
+              <li className="d-flex align-items-center">
+                <FaChartLine className="me-3 text-primary" />
+                <span className="text-secondary">Efficient vendor coordination</span>
+              </li>
+            </ul>
+          </Card.Body>
+        </Card>
+      </Col>
+    </Row>
+  </Container>
+</section>
       
       {/* Explore Retail Solutions */}
       <section className="solutions-section py-5">

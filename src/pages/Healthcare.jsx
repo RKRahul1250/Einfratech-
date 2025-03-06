@@ -1,294 +1,273 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import './HealthCare.css'; // Fixed typo
+import React from 'react';
+import { motion } from 'framer-motion';
+import './Healthcare.css';
 
-function HealthCare() {
-  useEffect(() => {
-    const loadCSS = (href, integrity, crossOrigin) => {
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = href;
-      if (integrity) link.integrity = integrity;
-      if (crossOrigin) link.crossOrigin = crossOrigin;
-      document.head.appendChild(link);
-      return link;
-    };
+const Healthcare = () => {
+  const pageVariants = {
+    initial: { opacity: 0 },
+    animate: { opacity: 1, transition: { duration: 0.5, staggerChildren: 0.2 } },
+    exit: { opacity: 0 }
+  };
 
-    const loadScript = (src, integrity, crossOrigin) => {
-      const script = document.createElement('script');
-      script.src = src;
-      script.async = true;
-      if (integrity) script.integrity = integrity;
-      if (crossOrigin) script.crossOrigin = crossOrigin;
-      document.body.appendChild(script);
-      return script;
-    };
+  const itemVariants = {
+    initial: { y: 20, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    exit: { y: -20, opacity: 0 }
+  };
 
-    const googleFontsPreconnect1 = loadCSS('https://fonts.googleapis.com');
-    const googleFontsPreconnect2 = loadCSS('https://fonts.gstatic.com', null, 'anonymous');
-    const googleFonts = loadCSS(
-      'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap'
-    );
-    const bootstrapCSS = loadCSS(
-      'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css',
-      'sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH',
-      'anonymous'
-    );
-    const bootstrapIconsCSS = loadCSS(
-      'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css'
-    );
-    const aosCSS = loadCSS('https://unpkg.com/aos@2.3.1/dist/aos.css');
-    const bootstrapJS = loadScript(
-      'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js',
-      'sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz',
-      'anonymous'
-    );
-    const aosJS = loadScript('https://unpkg.com/aos@2.3.1/dist/aos.js');
-    
-    aosJS.onload = () => {
-      window.AOS.init({
-        duration: 800,
-        once: true,
-      });
-    };
-
-    return () => {
-      [googleFontsPreconnect1, googleFontsPreconnect2, googleFonts, bootstrapCSS, 
-       bootstrapIconsCSS, aosCSS, bootstrapJS, aosJS].forEach(resource => {
-        if (resource.parentNode) resource.parentNode.removeChild(resource);
-      });
-    };
-  }, []);
-
-  // other 
-
-  const stats = [
-    { id: 1, name: 'Transactions every 24 hours', value: '5 Lakh' },
-    { id: 2, name: 'Assets under holding', value: '$1 Million' },
-    { id: 3, name: 'New users annually', value: '10 Million' },
-  ]
-
-
-
-
-
-  // Unique data for four different Unite Support Teams cards
-  const supportTeamData = [
+  const benefits = [
     {
-      title: "Clinical Operations Support",
-      image: "https://img.freepik.com/free-photo/medical-banner-with-doctor-patient_23-2149611238.jpg?semt=ais_hybrid",
-      description: "Streamline clinical workflows to enhance patient outcomes.",
-      services: [
-        "Clinical Equipment Maintenance",
-        "Staff Training Programs",
-        "Patient Flow Optimization",
-        "Inventory Management"
-      ],
-      icons: ["bi-tools", "bi-person-gear", "bi-arrow-right-circle", "bi-boxes"]
+      title: "Break Down Silos",
+      description: "Enable your teams to make better decisions based on real-time data across support teams",
+      icon: "bi-diagram-3"
     },
-  
-   
+    {
+      title: "Optimize Operations",
+      description: "Connect equipment and asset data, automate work orders, and manage priorities and expenses",
+      icon: "bi-gear-wide-connected"
+    },
+    {
+      title: "Be Regulatory Ready",
+      description: "Maintain accurate documentation and ensure processes are followed with built-in compliance controls",
+      icon: "bi-shield-check"
+    }
   ];
 
+  const solutions = [
+    {
+      title: "HTM Asset Management",
+      icon: "bi-pc-display",
+      description: "Manage clinical equipment lifecycle"
+    },
+    {
+      title: "Facilities Maintenance",
+      icon: "bi-building-gear",
+      description: "Streamline maintenance operations"
+    },
+    {
+      title: "OT Security",
+      icon: "bi-shield-lock",
+      description: "Protect medical devices and systems"
+    },
+    {
+      title: "Space Management",
+      icon: "bi-grid-3x3",
+      description: "Optimize hospital space utilization"
+    },
+    {
+      title: "Real Estate",
+      icon: "bi-building",
+      description: "Manage healthcare facilities"
+    },
+    {
+      title: "Capital Planning",
+      icon: "bi-cash-coin",
+      description: "Plan and track investments"
+    }
+  ];
 
-
-  // other 2
-
-
-  const products = [
-  {
-    id: 1,
-    name: 'India',
-    href: '#',
-    price: 'Mukesh',
-    imageSrc: 'https://s39613.pcdn.co/wp-content/uploads/2018/01/student-backpack-id683911900-FF180119.jpg',
-    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-  },
-  {
-    id: 2,
-    name: 'UK',
-    href: '#',
-    price: 'Sam Altomas',
-    imageSrc: 'https://www.shutterstock.com/image-photo/portrait-hispanic-guy-going-university-260nw-332985821.jpg',
-    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-  },
-  {
-    id: 3,
-    name: 'USA',
-    href: '#',
-    price: 'Jems conser',
-    imageSrc: 'https://www.shutterstock.com/image-photo/freshmen-collegeuniversity-student-260nw-306115559.jpg',
-    imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
-  },
-  {
-    id: 4,
-    name: 'Kenada',
-    href: '#',
-    price: 'Sukhbider ',
-    imageSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsle6GzfUOucEFBFf-kFSRfmq31Qb5OU5qCCDlml4w4b8pwuQ32iskGWLXRXbf2FBD5mE&usqp=CAU',
-    imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-  },
-];
   return (
-    <div className="service-details-page">
-      {/* Page Title */}
-      <section className="page-title text-center">
-        <div className="container">
-          <h1 data-aos="fade-down " style={{color:'white'}}>Connected Workplace for Healthcare</h1>
-          <p data-aos="fade-up" className="lead" style={{color:'white'}}>
-            Unite support teams and optimize operations for better patient care.
-          </p>
-          <a
-            href="/contact"
-            className="btn btn-primary mt-3"
-            data-aos="fade-up"
-            data-aos-delay="200"
+    <motion.div
+      className="healthcare-page"
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
+      <motion.section 
+        className="healthcare-hero-section"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <div className="healthcare-hero-shapes">
+          {[...Array(5)].map((_, index) => (
+            <motion.div
+              key={index}
+              className="healthcare-floating-shape"
+              animate={{
+                y: [0, -20, 0],
+                rotate: [0, 360],
+                scale: [1, 1.1, 1]
+              }}
+              transition={{
+                duration: 8,
+                repeat: Infinity,
+                delay: index * 0.5,
+                ease: "easeInOut"
+              }}
+            />
+          ))}
+        </div>
+        
+        <div className="healthcare-container">
+  <div className="healthcare-hero-content">
+    <div className="healthcare-hero-left">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.8,
+          ease: [0.6, -0.05, 0.01, 0.99]
+        }}
+      >
+        <motion.p className="healthcare-hero-eyebrow">
+          CONNECTED WORKPLACE FOR
+        </motion.p>
+        <motion.h1 className="healthcare-hero-title">
+        HEALTHCARE
+        </motion.h1>
+        
+        <motion.p className="healthcare-hero-description">
+          Collaboration across support teams means focusing on what matters – patient care. 
+          Connect every aspect of your hospital including:
+        </motion.p>
+        
+        <motion.ul className="healthcare-hero-features">
+  <motion.li>
+    <span className="white-checkmark">✔️</span>
+    Clinical equipment and facilities management
+  </motion.li>
+  <motion.li>
+    <span className="white-checkmark">✔️</span>
+    Real estate and space planning
+  </motion.li>
+  <motion.li>
+    <span className="white-checkmark">✔️</span>
+    Capital planning and projects
+  </motion.li>
+  <motion.li>
+    <span className="white-checkmark">✔️</span>
+    OT cybersecurity
+  </motion.li>
+</motion.ul>
+      </motion.div>
+    </div>
+
+    <div className="healthcare-hero-right">
+  <motion.div
+    className="healthcare-hero-image"
+    initial={{ opacity: 0, scale: 0.9 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.8, delay: 0.2 }}
+  >
+    <div className="image-overlay"></div>
+    <img 
+      src='\images\d1.png'
+      alt="Healthcare Hero"
+      className="blend-image"
+    />
+  </motion.div>
+    </div>
+  </div>
+</div>
+  
+        <motion.div 
+          className="healthcare-scroll-indicator"
+          animate={{ 
+            y: [0, 10, 0],
+            opacity: [0.6, 1, 0.6]
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        >
+          <i className="bi bi-chevron-down"></i>
+        </motion.div>
+      </motion.section>
+
+      <motion.section className="healthcare-benefits-section">
+        <div className="healthcare-container">
+          <div className="healthcare-section-header">
+            <motion.h2 variants={itemVariants}>
+              One View Into Your Operations
+            </motion.h2>
+            <motion.p variants={itemVariants}>
+              Eliminate old technology and manual processes. Share information, and work together from one solution that has the capabilities each team needs.
+            </motion.p>
+          </div>
+          <div className="healthcare-benefits-grid">
+            {benefits.map((benefit, index) => (
+              <motion.div
+                key={index}
+                className="healthcare-benefit-card"
+                variants={itemVariants}
+                whileHover={{ scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className={`bi ${benefit.icon}`}></i>
+                <h3>{benefit.title}</h3>
+                <p>{benefit.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </motion.section>
+
+      <motion.section className="healthcare-testimonial-section">
+        <div className="healthcare-container">
+          <motion.h2 
+            className="healthcare-section-header"
+            variants={itemVariants}
           >
-            Schedule a Demo
-          </a>
+            Why Indian Health Service Chose EInfratech Systems India
+          </motion.h2>
+          <motion.blockquote 
+            className="healthcare-testimonial"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            "Everybody is calling a device the same thing. Everybody is referring to the same make and models and are starting to refer to locations, buildings, and rooms using the same nomenclature, so that any reports we get are meaningful."
+          </motion.blockquote>
         </div>
-      </section>
+      </motion.section>
 
-
-
-    {/* top doctors */}
-
-      <section className="explore-solutions py-5">
-        <div className="container text-center">
-          <h2 className="h3 mb-3" data-aos="fade-up">
-            Top Doctors
-          </h2>
-          <p className="mb-5" data-aos="fade-up">
-            Discover our specialized solutions for healthcare  management.
-          </p>
-          <div className="row g-4">
-            <div className="col-md-4" data-aos="fade-up">
-              <div className="card h-100">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD8ZHQEXFF5oSIzXifb0rWe70DxdMyW4nWvA&s"
-                  alt="HTM Management"
-                  className="card-img-top"
-                />
-                <div className="card-body">
-                <h4 className="card-title">Pediatrician</h4>
-                  <h5 className="card-title">Saveer Kumar</h5>
-                  <p className="card-text">MD, DO, or MBBS/MBChB</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4" data-aos="fade-up" data-aos-delay="100">
-              <div className="card h-100">
-                <img
-                  src="https://t4.ftcdn.net/jpg/02/60/04/09/360_F_260040900_oO6YW1sHTnKxby4GcjCvtypUCWjnQRg5.jpg"
-                  alt="Facilities Maintenance"
-                  className="card-img-top"
-                />
-                <div className="card-body">
-                  <h4 className='card-title'>General Surgeon</h4>
-                  <h5 className="card-title">Santosh Patel</h5>
-                  <p className="card-text">MD, DO, or MBBS/MBChB</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4" data-aos="fade-up" data-aos-delay="200">
-              <div className="card h-100">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTauMR35oXJLMsukWoyEvoenvTPH2gLuFcZ9NSIlYMfIM8qFHnny5IlaAOaSRZBr5ZnBqA&usqp=CAU"
-                  alt="OT Security"
-                  className="card-img-top"
-                />
-                <div className="card-body">
-                <h4 className='card-title'>Cardiologist</h4>
-                  <h5 className="card-title">Sumit Goyal</h5>
-                  <p className="card-text">MD, DO, or MBBS/MBChB</p>
-                </div>
-              </div>
-            </div>
+      <motion.section className="healthcare-solutions-section">
+        <div className="healthcare-container">
+          <motion.h2 
+            className="healthcare-section-header"
+            variants={itemVariants}
+          >
+            Explore the Products in Connected Workplace for Healthcare
+          </motion.h2>
+          <div className="healthcare-solutions-grid">
+            {solutions.map((solution, index) => (
+              <motion.div
+                key={index}
+                className="healthcare-solution-card"
+                variants={itemVariants}
+                whileHover={{ 
+                  scale: 1.05,
+                  boxShadow: "0px 10px 30px rgba(0,0,0,0.1)"
+                }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className={`bi ${solution.icon}`}></i>
+                <h3>{solution.title}</h3>
+                <p>{solution.description}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="service-details py-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8">
-              {supportTeamData.map((data, index) => (
-                <div className="service-section" key={index} data-aos="fade-up" data-aos-delay={index * 100}>
-                  <h3 className="h4 mb-4">
-                    <i className="bi bi-hospital me-2"></i> {data.title}
-                  </h3>
-                  <div className="row justify-content-between align-items-center Card">
-                    <div className="col-lg-5 image-container ">
-                      <img
-                        src={data.image}
-                        alt={`${data.title} Support`}
-                        className="img-fluid"
-                      />
-                    </div>
-                    <div className="col-lg-5 text-container Services" id='Content'>
-                      <p>{data.description}</p>
-                      <ul className="info-list list-unstyled content">
-                        {data.services.map((service, i) => (
-                          <li key={i} >
-                            <i className={`bi ${data.icons[i]} me-2`}></i> {service}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+      <motion.section className="healthcare-cta-section">
+        <div className="healthcare-container">
+          <div className="healthcare-cta-content">
+            <motion.h2 variants={itemVariants}>
+              See It In Action
+            </motion.h2>
+            <motion.p variants={itemVariants}>
+              Contact us for a demo to help you reimagine your hospital's operations.
+            </motion.p>
           </div>
         </div>
-      </section>
-
-      {/* Explore Healthcare Solutions */}
-     
-
-{/* other */}
-
-      
-<div className="container">
-  <h1 className='Client'>Our Client</h1>
-      <div className="products-wrapper">
-        <h2 className="visually-hidden">Products</h2>
-        <div className="products-grid">
-          {products.map((product) => (
-            <a key={product.id} href={product.href} className="product-card">
-              <img
-                alt={product.imageAlt}
-                src={product.imageSrc}
-                className="product-image"
-              />
-              <h3 className="product-name">{product.name}</h3>
-              <p className="product-price">{product.price}</p>
-            </a>
-          ))}
-        </div>
-      </div>
-    </div>
-
-      <div className="stats-container">
-      <div className="stats-wrapper">
-        <dl className="stats-grid">
-          {stats.map((stat) => (
-            <div key={stat.id} className="stat-item">
-              <dt className="stat-name">{stat.name}</dt>
-              <dd className="stat-value">{stat.value}</dd>
-            </div>
-          ))}
-        </dl>
-      </div>
-    </div>
-
-
-{/* other 2 */}
-
-
-    
-    </div>
+      </motion.section>
+    </motion.div>
   );
-}
+};
 
-export default HealthCare;
+export default Healthcare;

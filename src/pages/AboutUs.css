@@ -3,7 +3,8 @@
   width: 100%; 
   margin: 0;
   padding: 0;
-  background-image: url('./images/aboutus1.jpg'); /* Replace with your actual image path */
+  background-image: url('/images/aboutus1.jpg');
+ /* Replace with your actual image path */
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;

@@ -10,6 +10,7 @@ Currently, two official plugins are available:
 
 
 ## ⚠️ Important Notice
+The file `dist/images/backup1.zip` is not included in this repository due to GitHub's file size limitations.  
 The backup files are now stored on GitHub.  
 📥 **Download them from**: [GitHub Backup Repo](https://github.com/RKRahul1250/backup)  
 📂 **After downloading, place the folder in**: `dist/backup/`

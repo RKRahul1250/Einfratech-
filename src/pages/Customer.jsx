@@ -47,7 +47,7 @@ const Customer = () => {
                               {/* First Column */}
           <div className="col-lg-4 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center mb-4">
             <img 
-              src="/images/cus3.jpg" 
+              src="/public/images/cus3.jpg" 
               alt="All Day" 
               className="img-fluid uniform-img" 
               style={{ 

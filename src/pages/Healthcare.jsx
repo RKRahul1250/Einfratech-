@@ -74,109 +74,62 @@ const Healthcare = () => {
       animate="animate"
       exit="exit"
     >
-      <motion.section 
-        className="healthcare-hero-section"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
-        <div className="healthcare-hero-shapes">
-          {[...Array(5)].map((_, index) => (
-            <motion.div
-              key={index}
-              className="healthcare-floating-shape"
-              animate={{
-                y: [0, -20, 0],
-                rotate: [0, 360],
-                scale: [1, 1.1, 1]
-              }}
-              transition={{
-                duration: 8,
-                repeat: Infinity,
-                delay: index * 0.5,
-                ease: "easeInOut"
-              }}
-            />
-          ))}
-        </div>
-        
-        <div className="healthcare-container">
-  <div className="healthcare-hero-content">
-    <div className="healthcare-hero-left">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
+      
+
+
+<motion.section 
+  className="healthcare-hero-section"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+>
+  <div className="healthcare-hero-wrapper">
+    <div className="healthcare-hero-text">
+      <motion.h1
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.8,
-          ease: [0.6, -0.05, 0.01, 0.99]
-        }}
+        transition={{ duration: 0.6 }}
       >
-        <motion.p className="healthcare-hero-eyebrow">
-          CONNECTED WORKPLACE FOR
-        </motion.p>
-        <motion.h1 className="healthcare-hero-title">
-        HEALTHCARE
-        </motion.h1>
-        
-        <motion.p className="healthcare-hero-description">
-          Collaboration across support teams means focusing on what matters – patient care. 
-          Connect every aspect of your hospital including:
-        </motion.p>
-        
-        <motion.ul className="healthcare-hero-features">
-  <motion.li>
-    <span className="white-checkmark">✔️</span>
-    Clinical equipment and facilities management
-  </motion.li>
-  <motion.li>
-    <span className="white-checkmark">✔️</span>
-    Real estate and space planning
-  </motion.li>
-  <motion.li>
-    <span className="white-checkmark">✔️</span>
-    Capital planning and projects
-  </motion.li>
-  <motion.li>
-    <span className="white-checkmark">✔️</span>
-    OT cybersecurity
-  </motion.li>
-</motion.ul>
-      </motion.div>
+        CONNECTED WORKPLACE FOR <span>HEALTHCARE</span>
+      </motion.h1>
+      
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="hero-description"
+      >
+        Collaboration across support teams means focusing on what matters – patient care. 
+        Connect every aspect of your hospital including:
+      </motion.p>
+      
+      <motion.ul
+        className="hero-features"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+      >
+        <li><span>✔️</span> Clinical equipment and facilities management</li>
+        <li><span>✔️</span> Real estate and space planning</li>
+        <li><span>✔️</span> Capital planning and projects</li>
+        <li><span>✔️</span> OT cybersecurity</li>
+      </motion.ul>
     </div>
 
-    <div className="healthcare-hero-right">
-  <motion.div
-    className="healthcare-hero-image"
-    initial={{ opacity: 0, scale: 0.9 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.8, delay: 0.2 }}
-  >
-    <div className="image-overlay"></div>
-    <img 
-      src='\images\d1.png'
-      alt="Healthcare Hero"
-      className="blend-image"
-    />
-  </motion.div>
-    </div>
+    <motion.div 
+      className="healthcare-hero-image"
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8 }}
+    >
+      <img 
+        src="/images/d1.png" 
+        alt="Healthcare Solutions"
+        loading="eager"
+      />
+    </motion.div>
   </div>
-</div>
-  
-        <motion.div 
-          className="healthcare-scroll-indicator"
-          animate={{ 
-            y: [0, 10, 0],
-            opacity: [0.6, 1, 0.6]
-          }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        >
-          <i className="bi bi-chevron-down"></i>
-        </motion.div>
-      </motion.section>
+</motion.section>
 
       <motion.section className="healthcare-benefits-section">
         <div className="healthcare-container">

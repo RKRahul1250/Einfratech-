@@ -180,12 +180,12 @@ const Dashboard = () => {
             </div>
 
             {/* Additional Sections with Light Grey Background */}
-<div className="container my-5 py-5 bg-white rounded">
-    <div className="row align-items-center mb-5">
-        <div className="col-md-6">
+<div className="container my-3 py-3 bg-white rounded">
+    <div className="row align-items-center mb-5 px-4">
+        <div className="col-md-6 px-4">
             <img src="/public/images/c.jpeg" alt="Facilities Maintenance" className="img-fluid rounded shadow" style={{ maxWidth: "75%", height: "auto" }} />
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 px-4">
             <h2 className="fw-bold mb-4 text-primary">Comprehensive Facilities Maintenance</h2>
             <p className="text-start lead">
                 Ensure the longevity and optimal performance of your assets with our proactive facilities maintenance services.
@@ -195,11 +195,31 @@ const Dashboard = () => {
         </div>
     </div>
 
-    <div className="row align-items-center mb-5">
-        <div className="col-md-6 order-md-2">
-            <img src="/public/images/c2.jpeg" alt="Space Planning" className="img-fluid rounded shadow" style={{ maxWidth: "75%", height: "auto" }} />
+    <div className="row align-items-center mb-5 px-4" 
+        style={{ 
+            paddingLeft: "12rem", 
+            transform: "translateX(4rem)",
+            '@media (max-width: 768px)': {
+                paddingLeft: '1rem',
+                transform: 'none'
+            }
+        }}
+    >
+        <div className="col-md-2 order-md-2 px-4">
+            <img 
+                src="/public/images/c2.jpeg" 
+                alt="Space Planning" 
+                className="img-fluid rounded shadow" 
+                style={{ 
+                    maxWidth: "75%", 
+                    height: "auto",
+                    '@media (max-width: 768px)': {
+                        maxWidth: "100%"
+                    }
+                }} 
+            />
         </div>
-        <div className="col-md-6 order-md-1">
+        <div className="col-md-6 order-md-1 px-4">
             <h2 className="fw-bold mb-4 text-primary">Strategic Space Planning and Optimization</h2>
             <p className="text-start lead">
                 Maximize your workspace potential with our strategic space planning solutions.
@@ -209,11 +229,11 @@ const Dashboard = () => {
         </div>
     </div>
 
-    <div className="row align-items-center mb-5">
-        <div className="col-md-6">
+    <div className="row align-items-center mb-5 px-4">
+        <div className="col-md-6 px-4">
             <img src="/public/images/c3.jpeg" alt="OT Security" className="img-fluid rounded shadow" style={{ maxWidth: "75%", height: "auto" }} />
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 px-4">
             <h2 className="fw-bold mb-4 text-primary">Robust Operational Technology (OT) Security</h2>
             <p className="text-start lead">
                 Protect your critical infrastructure with our comprehensive OT security services.
@@ -223,11 +243,11 @@ const Dashboard = () => {
         </div>
     </div>
 
-    <div className="row align-items-center mb-5">
-        <div className="col-md-6 order-md-2">
+    <div className="row align-items-center mb-5 px-4" style={{ paddingLeft: "12rem", transform: "translateX(4rem)" }}>
+        <div className="col-md-6 order-md-2 px-4">
             <img src="/public/images/c4.jpeg" alt="Energy Management" className="img-fluid rounded shadow" style={{ maxWidth: "75%", height: "auto" }} />
         </div>
-        <div className="col-md-6 order-md-1">
+        <div className="col-md-6 order-md-1 px-4">
             <h2 className="fw-bold mb-4 text-primary">Sustainable Energy Management Solutions</h2>
             <p className="text-start lead">
                 Promote environmental responsibility with our sustainable energy management services.

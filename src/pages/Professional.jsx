@@ -92,7 +92,14 @@ const Professional = () => {
           <div className="col-md-12">
             <div className="card border-0 shadow-sm bg-light">
               <div className="row g-0 align-items-center">
-                <div className="col-md-8 p-4">
+                <div className="col-md-12" style={{ 
+                  transform: 'translateX(-2rem)',
+                  paddingLeft: '3rem',
+                  '@media (max-width: 768px)': {
+                    transform: 'none',
+                    paddingLeft: '1rem'
+                  }
+                }}>
                   <h5 className="fw-bold">A Customer-Centric Approach</h5>
                   <p>
                     Before we start building your environment, we make certain we
@@ -116,7 +123,6 @@ const Professional = () => {
             </div>
           </div>
         </div>
-
         {/* Testimonials Section */}
         <div className="text-center my-5">
           <h2 className="fw-bold">Customer Testimonials</h2>

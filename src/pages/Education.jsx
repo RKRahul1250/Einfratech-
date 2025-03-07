@@ -18,14 +18,18 @@ function Education() {
       </div>
       
       <section className="container education-services my-4 py-4">
-  <div className="row align-items-center">
+      <div className="row align-items-center">
     <div className="col-lg-6 mb-3 mb-lg-0">
-      <div className="image-container text-center h-100">
+      <div className="image-container text-center h-100 d-flex align-items-center">
         <img
           src="/images/modern-education.jpg"
           alt="Digital Classroom"
-          className="img-fluid rounded shadow w-100 h-100 object-fit-cover"
-          style={{ minHeight: '300px', maxHeight: '400px' }}
+          className="img-fluid rounded shadow"
+          style={{ 
+            width: '90%',
+            height: '550px',
+            objectFit: 'cover'
+          }}
         />
       </div>
     </div>

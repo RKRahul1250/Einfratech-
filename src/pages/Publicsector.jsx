@@ -21,75 +21,81 @@ function Publicsector() {
   </div>
   {/* Main Content */}
 
-    <section className=" service-details container">
-       <div className="row align-items-center">
-        <div className="col-md-6 text-center">
-        <img
-            src="/images/india.jpg" 
-            alt="Team Discussion"
-            className="img-fluid rounded shadow-lg"
-            style={{height:"40vh"}}
-            // style={{height: '55%'}}
-          />
-        </div>
-        <div className="col-md-6 mt-3 px-3" data-aos="fade-up">
-        <h3><i className="bi bi-globe" /> Connect Your Teams</h3>
-        <p>
-              Consolidate systems across various departments for operational
-              efficiency.
-            </p>
-            <ul>
-              <li>
-                <i className="bi bi-tools" /> Maintenance &amp; Asset Management
-              </li>
-              <li>
-                <i className="bi bi-building" /> Physical Space Allocation
-              </li>
-              <li><i className="bi bi-diagram-3" /> Construction Projects</li>
-              <li>
-                <i className="bi bi-clipboard-check" /> Real Estate Planning
-              </li>
-            </ul>
-        </div>
-       </div>
+  <section className="service-details container ps-4">
+  <div className="row align-items-center mb-5 px-4 ">
+    <div className="col-md-6 text-center">
+      <img
+        src="/images/india.jpg" 
+        alt="Team Discussion"
+        className="img-fluid rounded shadow-lg"
+        style={{
+          maxWidth: "60%",
+          height: "auto"
+        }}
+      />
+    </div>
+    
+    <div className="col-md-6 mt-4" data-aos="fade-up">
+  <div style={{ maxWidth: "75%", marginRight: "auto", marginLeft: "0" }}>
+    <h3 className="mb-3"><i className="bi bi-globe" /> Connect Your Teams</h3>
+    <p className="mb-4">
+      Consolidate systems across various departments for operational
+      efficiency.
+    </p>
+    <ul className="ps-3 mb-0">
+      <li className="mb-3 d-flex align-items-center">
+        <i className="bi bi-tools" /> Maintenance &amp; Asset Management
+      </li>
+      <li className="mb-3 d-flex align-items-center">
+        <i className="bi bi-building" /> Physical Space Allocation
+      </li>
+      <li className="mb-3 d-flex align-items-center">
+        <i className="bi bi-diagram-3" /> Construction Projects
+      </li>
+      <li className="mb-3 d-flex align-items-center">
+        <i className="bi bi-clipboard-check" /> Real Estate Planning
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
 
        
 
-       <div className="row align-items-center">
-       <div className="col-md-10 order-md-1">
-        <img
-            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGFuYWx5c2lzfGVufDB8fDB8fHww" // Replace with actual image path
-            alt="Team Discussion"
-            className="img-fluid rounded shadow-lg"
-            style={{height:"40vh"}}
-          />
-        </div>
+       <div className="row align-items-center mb-5 px-4 justify-content-end">
+  <div className="col-md-6 order-md-2 text-center">
+    <img
+      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?fm=jpg&q=60&w=3000"
+      alt="Team Discussion"
+      className="img-fluid rounded shadow-lg"
+      style={{ maxWidth: "75%", height: "auto" }}
+    />
+  </div>
+  
+  <div className="col-md-6 order-md-1 px-4">
+    <h3 className="mb-4"><i className="bi bi-bar-chart me-2" /> Achieve Operational Efficiency</h3> 
+    <p className="mb-4">
+      Bring together all aspects of enterprise service management into
+      one platform.
+    </p>
+    <ul className="list-unstyled">
+      <li className="mb-3 d-flex  align-items-center">
+      <i className="bi bi-link ms-2" />
+        <span>Ensure Complete</span>
         
-        <div className="col-md-1 mt-10 px-10" data-aos="fade-up">
-        <h3><i className="bi bi-bar-chart" /> Achieve Operational Efficiency </h3> 
-        <p>
-              Bring together all aspects of enterprise service management into
-              one platform.
-            </p>
-            <ul>
-              <li>
-              <i className="col-md-1" data-aos="fade-up"/>
-                <i className="bi bi-link" />
-                Ensure Complete 
-              </li>
-              <li>
-              <i className="col-md-1" data-aos="fade-up"/>
-                <i className="bi bi-person-check" />
-                Enable Agencies &amp; Mission 
-              </li>
-              <li>
-              <i className="col-md-1" data-aos="fade-up"/>
-                <i className="bi bi-graph-up-arrow" />
-                Access Data Anytime
-              </li>
-            </ul>
-        </div>
-       </div>
+      </li>
+      <li className="mb-3 d-flex  align-items-center">
+      <i className="bi bi-person-check ms-2" />
+        <span>Enable Agencies &amp; Mission</span>
+        
+      </li>
+      <li className="mb-3 d-flex  align-items-center">
+      <i className="bi bi-graph-up-arrow ms-2" />
+        <span>Access Data Anytime</span>
+      </li>
+    </ul>
+  </div>
+</div>
     </section>
 
  

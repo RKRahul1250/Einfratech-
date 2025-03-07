@@ -54,21 +54,30 @@ function LifeScience1() {
                 style={{ height: '40vh' }}
               />
         </div>
-        <div className="col-md-1" data-aos="fade-up">
-        <h3><i className="bi bi-sliders" /> Simplify Your Workplace</h3>
-                <div className="text-start">
-                  <p>
-                    Manage all facility and lab operations seamlessly with a <strong>single platform</strong>.
-                  </p>
-                  <i className="col-md-1 text-center" data-aos="fade-up"/>
-                  <ul className="list-unstyled">
-
-                    <li><i className="col-md-1" data-aos="fade-up"/><i className="bi bi-people" /> <strong>Break Down Silos</strong></li>
-                    <li><i className="col-md-1" data-aos="fade-up"/><i className="bi bi-gear-wide" /> <strong>Optimize Operations</strong></li>
-                    <li><i className="col-md-1" data-aos="fade-up"/><i className="bi bi-check-circle" /> <strong>Be Always Audit-Ready</strong></li>
-                  </ul>
-                </div>
-        </div>
+        <div className="col-md-6" data-aos="fade-up">
+  <div className="ps-5">
+    <h3 className="mb-4"><i className="bi bi-sliders me-2" /> Simplify Your Workplace</h3>
+    <div className="text-start">
+      <p className="mb-4">
+        Manage all facility and lab operations seamlessly with a <strong>single platform</strong>.
+      </p>
+      <ul className="list-unstyled">
+        <li className="mb-3 d-flex align-items-center">
+          <i className="bi bi-people me-2" /> 
+          <strong>Break Down Silos</strong>
+        </li>
+        <li className="mb-3 d-flex align-items-center">
+          <i className="bi bi-gear-wide me-2" /> 
+          <strong>Optimize Operations</strong>
+        </li>
+        <li className="mb-3 d-flex align-items-center">
+          <i className="bi bi-check-circle me-2" /> 
+          <strong>Be Always Audit-Ready</strong>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
        </div>
     </section>
 

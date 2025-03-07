@@ -506,3 +506,16 @@ html {
 .row + .row {
     margin-top: 4rem;
 }
+
+@media (max-width: 768px) {
+    .row.align-items-center {
+        padding-left: 1rem !important;
+        transform: none !important;
+    }
+
+    .row.align-items-center img {
+        max-width: 100% !important;
+        margin: 0 auto;
+        display: block;
+    }
+}

@@ -68,16 +68,16 @@ function Features() {
                             </div>
 
 
-                            <div className="col-lg-5 col-md-6">
+                            <div className="col-lg-6 col-md-7">
                                 <div className="tab-content img-hover-zoom ms-4" data-aos="fade-up" data-aos-delay="200">
                                     <div className="tab-pane fade active show" id="features-tab-1">
-                                    <img src="/images/tabs-1.jpg" alt="" className="img-fluid img-rounded" />
+                                    <img src="/images/cloud.png" alt="" className="img-fluid img-rounded" />
                                     </div>
                                     <div className="tab-pane fade" id="features-tab-2">
-                                    <img src="/images/tabs-2.jpg" alt="" className="img-fluid img-rounded" />
+                                    <img src="/images/tabs-3.jpg" alt="" className="img-fluid img-rounded" />
                                     </div>
                                     <div className="tab-pane fade" id="features-tab-3">
-                                    <img src="/images/tabs-3.jpg" alt="" className="img-fluid img-rounded" />
+                                    <img src="/images/tabs-2.jpg" alt="" className="img-fluid img-rounded" />
                                     </div>
                                     <div className="tab-pane fade" id="features-tab-4">
                                     <img src="/images/tabs-1.jpg" alt="" className="img-fluid img-rounded" />
@@ -153,7 +153,7 @@ function Features() {
                                         reduced, enhanced an employee satisfaction.
                                         Automate  processes,
                                         improve decision-making,  create a moreproductive.Gain instant access to crucial data. Automate the processes,
-                                        improve decision-making, and to create a moreproductive  environment.Gain instant access to crucial data. 
+                                        improve decision-making, and to create a moreproductive  environment. Gain instant access to crucial data. 
                                     </p>
                                     {/* <a href="#" style={{ marginTop: "20px" }} className="btn btn-primary text-white px-4 py-2 ">
                                         Discover More

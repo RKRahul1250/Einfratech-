@@ -67,14 +67,14 @@ const RetailPage = () => {
           </Card.Body>
         </Card>
       </Col>
-      
+
       <Col lg={6} md={12}>
         <Card className="feature-card">
           <Card.Body>
             <div className="d-flex align-items-center mb-4">
-            <div className="feature-icon me-3 text-success">
-          <FaChartLine size={24} />
-        </div>
+              <div className="feature-icon me-3 text-primary">
+                <FaUsers size={30} />
+              </div>
               <h4 className="feature-title m-0 fw-bold">Achieve Store Excellence</h4>
             </div>
             <p className="text-secondary mb-4">Optimize operations and drive business growth with data-driven insights.</p>
@@ -95,6 +95,8 @@ const RetailPage = () => {
           </Card.Body>
         </Card>
       </Col>
+      
+      
     </Row>
   </Container>
 </section>
@@ -208,14 +210,15 @@ const RetailPage = () => {
   </Container>
 </section>
 
+
       {/* Call to Action */}
-<section className="cta-section text-center py-4 bg-dark text-white">
+
+      <section className="cta-section text-center py-4 bg-dark text-white">
   <Container>
+    
     <h2 className="fw-bold">Ready to Transform Your Retail Business?</h2>
     <p className="lead text-light">Join thousands of businesses using our AI-powered solutions.</p>
-    <Link className="btn btn-primary rounded-pill px-4 py-2" to="/contactus">
-      Contact Us
-    </Link>
+    <a href="/contactus" className="btn btn-primary btn-lg">Contact Us Today</a>
   </Container>
 </section>
 

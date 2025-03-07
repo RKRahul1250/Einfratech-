@@ -54,16 +54,7 @@ const Healthcare = () => {
       icon: "bi-grid-3x3",
       description: "Optimize hospital space utilization"
     },
-    {
-      title: "Real Estate",
-      icon: "bi-building",
-      description: "Manage healthcare facilities"
-    },
-    {
-      title: "Capital Planning",
-      icon: "bi-cash-coin",
-      description: "Plan and track investments"
-    }
+    
   ];
 
   return (

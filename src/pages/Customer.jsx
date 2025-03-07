@@ -32,7 +32,7 @@ const Customer = () => {
           <div className="parent">
             <div className="div1"><motion.img src="/images/about-company-1.jpg" alt="Workplace 1" whileHover={{ scale: 1.1 }} /></div>
             <div className="div2"><motion.img src="/images/about-company-2.jpg" alt="Workplace 2" whileHover={{ scale: 1.1 }} /></div>
-            <div className="div3"><motion.img src="/images/about-company-2.jpg" alt="Workplace 2" whileHover={{ scale: 1.1 }} /></div>
+            <div className="div3"><motion.img src="/images/about-company-3.jpg" alt="Workplace 3" whileHover={{ scale: 1.1 }} /></div>
           </div>
         </div>
       </div>

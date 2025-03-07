@@ -53,13 +53,11 @@ const Contactus = () => {
         <div>
             <section id="contact" className="contact section ">
                 {/* Section Title */}
-                <div className="container section-title" data-aos="fade-up">
-                    <h2>Contact Us </h2>
-                    <p>
-                     "Let s connect! Get in touch for Support or Collaboration."
-                    </p>
+                <div className="container  text-center" data-aos="fade-up">
+                    <h2><u>Contact Us</u> </h2>
+                   
                 </div>
-
+                   <br/>
                 <div className="container" data-aos="fade-up" data-aos-delay="100">
                     <div className="row gy-4">
                         <div className="col-lg-6">

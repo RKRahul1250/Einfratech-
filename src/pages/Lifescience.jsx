@@ -46,7 +46,7 @@ function LifeScience1() {
        </div>
 
        <div className="row align-items-center mt-5">
-        <div className="col-md-6 text-center">
+       <div className="col-md-10 order-md-1">
         <img
                 src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29ya3xlbnwwfHwwfHx8MA%3D%3D" // Replace with actual image path
                 alt="Team Discussion"
@@ -54,16 +54,18 @@ function LifeScience1() {
                 style={{ height: '40vh' }}
               />
         </div>
-        <div className="col-md-6 mt-3 px-3 " data-aos="fade-up">
+        <div className="col-md-1" data-aos="fade-up">
         <h3><i className="bi bi-sliders" /> Simplify Your Workplace</h3>
                 <div className="text-start">
                   <p>
                     Manage all facility and lab operations seamlessly with a <strong>single platform</strong>.
                   </p>
+                  <i className="col-md-1 text-center" data-aos="fade-up"/>
                   <ul className="list-unstyled">
-                    <li><i className="bi bi-people" /> <strong>Break Down Silos</strong></li>
-                    <li><i className="bi bi-gear-wide" /> <strong>Optimize Operations</strong></li>
-                    <li><i className="bi bi-check-circle" /> <strong>Be Always Audit-Ready</strong></li>
+
+                    <li><i className="col-md-1" data-aos="fade-up"/><i className="bi bi-people" /> <strong>Break Down Silos</strong></li>
+                    <li><i className="col-md-1" data-aos="fade-up"/><i className="bi bi-gear-wide" /> <strong>Optimize Operations</strong></li>
+                    <li><i className="col-md-1" data-aos="fade-up"/><i className="bi bi-check-circle" /> <strong>Be Always Audit-Ready</strong></li>
                   </ul>
                 </div>
         </div>
@@ -81,7 +83,7 @@ function LifeScience1() {
               {/* Card 1: GxP Asset Management */}
               <div className="col-md-4 mb-4" data-aos="fade-up">
                 <div className="card hover-effect">
-                  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400" alt="GxP" className="card-img-top" />
+                  <img src="\images\homewho.jpg" alt="GxP" className="card-img-top" />
                   <div className="card-body text-center">
                     <h5>GxP Asset Management</h5>
                     <p>Ensure compliance and streamline asset tracking.</p>
@@ -143,3 +145,5 @@ function LifeScience1() {
 }
 
 export default LifeScience1;
+
+

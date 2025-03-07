@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./Professional.css";
 
 const testimonials = [
   {
@@ -30,6 +31,13 @@ const Professional = () => {
             <p className="text-muted">
               It’s your Connected Workplace - We’ll just help you get there.
             </p>
+            <p className="text-muted">Improving customer-centricity, creating differentiation, building operational 
+              efficiency and cost optimization in the Healthcare industry are urgent needs. To aid in meeting these goals, 
+              Einfratech provides clients with services and customized solutions for prudent financial management, business 
+              performance management, continuous operational improvement, responsiveness to customer needs and processes to 
+              attract and retain top talent. Among the demonstrated outcomes are performance improvement, lowered cost of 
+              operations, reduced time to market and enhanced customer experience.</p>
+            
           </div>
           <div className="col-md-6 text-center">
             <img
@@ -59,7 +67,7 @@ const Professional = () => {
                   <img
                     src="/images/2.jpg"
                     alt="Team Discussion"
-                    className="img-fluid rounded-start"
+                    className="img-fluid rounded-start implementation-img"
                   />
                 </div>
                 <div className="col-md-8 p-4">

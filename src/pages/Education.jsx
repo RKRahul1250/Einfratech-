@@ -17,50 +17,43 @@ function Education() {
         </div>
       </div>
       
-      {/* Main Content */}
       <section className="container education-services my-4 py-4">
-        <div className="row align-items-center">
-          <div className="col-lg-6 mb-3 mb-lg-0">
-            <div className="image-container text-center">
-              <img
-                src="/images/modern-education.jpg"
-                alt="Digital Classroom"
-                className="img-fluid rounded shadow"
-              />
-            </div>
+  <div className="row align-items-center">
+    <div className="col-lg-6 mb-3 mb-lg-0">
+      <div className="image-container text-center h-100">
+        <img
+          src="/images/modern-education.jpg"
+          alt="Digital Classroom"
+          className="img-fluid rounded shadow w-100 h-100 object-fit-cover"
+          style={{ minHeight: '300px', maxHeight: '400px' }}
+        />
+      </div>
+    </div>
+    
+    <div className="col-lg-6 py-4">
+      <div className="service-section h-100" data-aos="fade-up">
+        <h2 className="section-title mb-4 px-4">
+          <i className="bi bi-mortarboard me-2"></i>
+          Enhance Learning Experiences
+        </h2>
+        <div className="features-list px-4">
+          <div className="feature-item mb-4">
+            <i className="bi bi-cloud-fill"></i>
+            <span>Cloud-based Learning Management Systems</span>
           </div>
-          
-          <div className="col-lg-6 py-4">
-            <div className="service-section" data-aos="fade-up">
-              <h2 className="section-title mb-3 px-4">
-                <i className="bi bi-mortarboard me-2 "></i>
-                Enhance Learning Experiences
-              </h2>
-              {/* <p className="lead mb-3 px-4">
-                Facilitate seamless learning with smart, connected educational tools.
-              </p> */}
-              <div className="features-list px-4">
-                <div className="feature-item">
-                  <i className="bi bi-cloud-fill"></i>
-                  <span>Cloud-based Learning Management Systems</span>
-                </div>
-                <div className="feature-item">
-                  <i className="bi bi-laptop-fill"></i>
-                  <span>Virtual Classrooms & Interactive Tools</span>
-                </div>
-                <div className="feature-item">
-                  <i className="bi bi-people-fill"></i>
-                  <span>Collaborative Learning Platforms</span>
-                </div>
-                {/* <div className="feature-item">
-                  <i className="bi bi-graph-up-arrow"></i>
-                  <span>Data-driven Insights & Analytics</span>
-                </div> */}
-              </div>
-            </div>
+          <div className="feature-item mb-4">
+            <i className="bi bi-laptop-fill"></i>
+            <span>Virtual Classrooms & Interactive Tools</span>
+          </div>
+          <div className="feature-item mb-4">
+            <i className="bi bi-people-fill"></i>
+            <span>Collaborative Learning Platforms</span>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Testimonial Section */}
       <section className="testimonial-section py-3 px-4">

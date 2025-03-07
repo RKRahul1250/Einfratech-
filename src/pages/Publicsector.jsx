@@ -25,7 +25,7 @@ function Publicsector() {
        <div className="row align-items-center">
         <div className="col-md-6 text-center">
         <img
-            src="https://imageio.forbes.com/specials-images/imageserve/5daa08776763cb0006091765/Group-of-businesspeople-high-fiving-while-sitting-in-a-meeting-/960x0.jpg?format=jpg&width=960" // Replace with actual image path
+            src="/images/india.jpg" 
             alt="Team Discussion"
             className="img-fluid rounded shadow-lg"
             style={{height:"40vh"}}
@@ -53,8 +53,10 @@ function Publicsector() {
         </div>
        </div>
 
-       <div className="row align-items-center mt-5">
-        <div className="col-md-6 text-center">
+       
+
+       <div className="row align-items-center">
+       <div className="col-md-10 order-md-1">
         <img
             src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGF0YSUyMGFuYWx5c2lzfGVufDB8fDB8fHww" // Replace with actual image path
             alt="Team Discussion"
@@ -62,7 +64,8 @@ function Publicsector() {
             style={{height:"40vh"}}
           />
         </div>
-        <div className="col-md-6 mt-3 px-3 " data-aos="fade-up">
+        
+        <div className="col-md-1 mt-10 px-10" data-aos="fade-up">
         <h3><i className="bi bi-bar-chart" /> Achieve Operational Efficiency </h3> 
         <p>
               Bring together all aspects of enterprise service management into
@@ -70,14 +73,17 @@ function Publicsector() {
             </p>
             <ul>
               <li>
+              <i className="col-md-1" data-aos="fade-up"/>
                 <i className="bi bi-link" />
                 Ensure Complete 
               </li>
               <li>
+              <i className="col-md-1" data-aos="fade-up"/>
                 <i className="bi bi-person-check" />
                 Enable Agencies &amp; Mission 
               </li>
               <li>
+              <i className="col-md-1" data-aos="fade-up"/>
                 <i className="bi bi-graph-up-arrow" />
                 Access Data Anytime
               </li>
@@ -145,7 +151,7 @@ function Publicsector() {
         {/* Card 3 */}
         <div className="col-md-4 mb-4" data-aos="fade-up" data-aos-delay={200}>
           <div className="card hover-effect">
-            <img src="https://media.licdn.com/dms/image/v2/D5612AQE1bO17sMHB3w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1725426181808?e=2147483647&v=beta&t=ss6pQCTLzh-PKLFFjz_n4zlqoBH0VymRgunjzeDKn1A" alt="OT Security" className="card-img-top" />
+            <img src="\public\images\modern-education.jpg" alt="OT Security" className="card-img-top" />
             <div className="card-body text-center">
               <h5>OT Security</h5>
               <p>Enhance cybersecurity for public sector infrastructure.</p>

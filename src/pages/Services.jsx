@@ -5,9 +5,9 @@ const Services = () => {
     return (
         <section className="services section ">
             {/* Section Title */}
-            <div className="container section-title" data-aos="fade-up">
-                <h2>Our Services</h2>
-                <p>Discover how we optimize workplace operations with cutting-edge solutions.</p>
+            <div className=" text-center" data-aos="fade-up">
+                <h2><u>Our Services</u></h2>
+               <br/>
             </div>
 
             {/* Services Grid */}

@@ -10,7 +10,7 @@ Currently, two official plugins are available:
 
 
 ## ⚠️ Important Notice
+The backup files are now stored on GitHub.  
+📥 **Download them from**: [GitHub Backup Repo](https://github.com/RKRahul1250/backup)  
+📂 **After downloading, place the folder in**: `dist/backup/`
 
-The file `dist/images/backup1.zip` is not included in this repository due to GitHub's file size limitations.  
-Please download it separately from [Google Drive Link](https://drive.google.com/drive/folders/1GFt8qXCkKhqR_X38uuM8gqiTHTN7azaQ?usp=sharing)  
-and place it in `dist/images/`.
